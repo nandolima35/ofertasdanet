@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/drawable-v24/botao_links_produtos_novos.xml" value="0.21743589743589745" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/drawable-v24/layout_1.xml" value="0.1962962962962963" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/drawable-v24/layout_2.xml" value="0.1962962962962963" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/drawable-v24/layout_3.xml" value="0.1962962962962963" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/drawable/botaonometema.xml" value="0.22083333333333333" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/drawable/shine.xml" value="0.1394736842105263" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout-large/home.xml" value="0.153515625" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout-normal/home.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout-small/home.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/activity_splashscreen.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/celulares.xml" value="0.25" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/consoles.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/fones.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/gabinetes.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/hds.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/home.xml" value="0.25" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/monitores.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/notebooks.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/outros.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/placas.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/placasdevideo.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/relogios.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/splash_screen.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/splashscreen.xml" value="0.22" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/ssd.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/layout/tvs.xml" value="0.2046875" />
+        <entry key="..\:/garimpeirodanetasmelhoresofertas/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22083333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

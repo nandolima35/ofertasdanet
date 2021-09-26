@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".home">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/layout"
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:layout_marginBottom="15dp"
+       android:background="@color/azul"
+       app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="MissingConstraints">
+
+      <TextView
+          android:id="@+id/text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="0dp"
+          android:fontFamily="@font/knewave"
+          android:gravity="center"
+          android:text="Ofertas da Net v2"
+          android:textColor="@color/roxo"
+          android:textSize="35sp"
+          android:textStyle="italic"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="HardcodedText,TextContrastCheck">
+
+
+      </TextView>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/constraintLayout"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="12dp"
+       android:background="@color/amarelo"
+       app:layout_constraintBottom_toTopOf="@+id/scrollView"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/layout"
+       tools:ignore="MissingConstraints">
+
+
+      <TextView
+          android:id="@+id/textview1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ellipsize="marquee"
+          android:marqueeRepeatLimit="marquee_forever"
+          android:scrollHorizontally="true"
+          android:singleLine="true"
+          android:text="As Melhores Ofertas Selecionadas dos Principais Sites do Brasil com os menores Preços"
+          android:textColor="@color/purple_500"
+          android:textSize="25sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="HardcodedText,SmallSp,TextContrastCheck">
+
+      </TextView>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/scrollView"
+       android:layout_width="match_parent"
+       android:layout_height="842dp"
+       android:layout_marginTop="11dp"
+       android:labelFor="@id/constraintLayout"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+       tools:ignore="MissingConstraints">
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="830dp"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="SpeakableTextPresentCheck">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/vermelho"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/celular"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/celular"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="CELULARES"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/consoles"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/videogame"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="CONSOLES"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/fones"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/fones"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="FONES DE OUVIDO"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/gabinetes"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/gabinete"
+                         tools:ignore="ContentDescription" />
+
+                     <TextView
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="GABINETES"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/hds"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:layout_gravity="center"
+                         android:background="@color/rosa"
+                         android:src="@drawable/hdd"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="HDs"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/monitores"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/monitor"
+                         tools:ignore="ContentDescription" />
+
+                     <TextView
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="MONITORES"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/outros"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/outros"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="140dp"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="OUTROS"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/placas"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/placadevideo"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="PLACAS DE VIDEO"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/notebooks"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/notebook"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="NOTEBOOKS"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/relogio"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/relogio"
+                         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="SMARTWATCH"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/tvs"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/ssd"
+                         tools:ignore="ContentDescription" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="SSDs"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/botao_links_produtos_novos"
+                   app:cardCornerRadius="15dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="vertical"
+                      tools:ignore="UseCompoundDrawables">
+
+                     <ImageView
+                         android:id="@+id/ssd"
+                         android:layout_width="140dp"
+                         android:layout_height="120dp"
+                         android:background="@color/rosa"
+                         android:src="@drawable/tvs"
+                         tools:ignore="ContentDescription" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/rosa"
+                         android:gravity="center"
+                         android:text="TVS"
+                         android:textColor="@color/purple_500"
+                         android:textStyle="bold"
+                         tools:ignore="HardcodedText" />
+
+                  </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+
+      </ScrollView>
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
